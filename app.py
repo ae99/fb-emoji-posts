@@ -20,7 +20,7 @@ class Search:
 		return None
 
 	def match(self, name=''):
-		return self.emojis.get(name, None)
+		return self.emojis.get(name, {'char': None}).get('char', None)
 
 emoji_search = Search()
 
