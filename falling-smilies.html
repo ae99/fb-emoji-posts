@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <style>
+        #post {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            overflow: hidden;
+        }
+
+        #smile {
+            position: absolute;
+            -webkit-animation: fall 5s infinite;
+            animation: fall 5s infinite;
+        }
+
+        @-webkit-keyframes fall {
+            from {
+                top: -20px;
+            }
+            to {
+                top: 200px;
+            }
+        }
+
+        @keyframes fall {
+            from {
+                top: -20px;
+            }
+            to {
+                top: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="post">
+
+    </div>
+</body>
+
+<script>
+    let post = document.getElementById("post");
+    let delay = 300;
+
+    function doSetTimeout(x, loop) {
+        setTimeout(function () {
+            let div = document.createElement('div');
+            div.setAttribute("id", "smile");
+            div.style.left = `${x}px`;
+            div.style.top = '-20px';
+            div.innerHTML = "😀";
+            post.appendChild(div);
+            setTimeout(function () {
+                div.remove()
+            }, 5000);
+        }, loop * delay);
+    }
+    let n_to_create = 5000;
+    for (let i = 0; i < n_to_create; i++) {
+        var x = Math.random() * post.offsetWidth;
+        console.log(x);
+        doSetTimeout(x, i);
+    }
+
+</script>
+
+</html>
