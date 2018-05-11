@@ -7,20 +7,15 @@ def nlpify(strin=''):
 
 class Search:
 	def __init__(self):
-		with open('index.json', 'r') as f:
-			self.index = json.loads(f.read())
-
 		with open('emojis.json', 'r') as f:
 			self.emojis = json.loads(f.read())
 
 	def query(self, word=''):
-		for k,v in self.index.iteritems():
-			if word.lower() in v:
-				return k
-		return None
-
-	def match(self, name=''):
-		return self.emojis.get(name, {'char': None}).get('char', None)
+		matches = []
+		for v in self.emojis.values():
+			if word.lower() in v.get('keywords', None):
+				matches.append(v.get('char', None))
+		return matches
 
 emoji_search = Search()
 
@@ -40,8 +35,7 @@ def get():
 	emojis = []
 	for wrd in nlp_data:
 		emoj = emoji_search.query(wrd)
-		if emoj:
-			emojis.append([emoj, emoji_search.match(emoj)])
+		[emojis.append(e) for e in emoj]
 	return jsonify({'success': True, 'emojis': emojis})
 
 @app.after_request
