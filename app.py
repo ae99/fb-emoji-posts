@@ -10,11 +10,17 @@ class Search:
 		with open('index.json', 'r') as f:
 			self.index = json.loads(f.read())
 
+		with open('emojis.json', 'r') as f:
+			self.emojis = json.loads(f.read())
+
 	def query(self, word=''):
 		for k,v in self.index.iteritems():
 			if word.lower() in v:
 				return k
 		return None
+
+	def match(self, name=''):
+		return self.emojis.get(name, None)
 
 emoji_search = Search()
 
@@ -35,7 +41,7 @@ def get():
 	for wrd in nlp_data:
 		emoj = emoji_search.query(wrd)
 		if emoj:
-			emojis.append(emoj)
+			emojis.append([emoj, emoji_search.match(emoj)])
 	return jsonify({'success': True, 'emojis': emojis})
 
 @app.after_request
