@@ -4,6 +4,8 @@
   background-color: white;
   border: 1px solid #dddfe2;
   border-radius: 4px;
+  overflow: hidden;
+  margin-top: 0.5rem;
   .top {
     height: 56px;
     text-align: left;
@@ -29,4 +31,12 @@
       }
     }
   }
+  .bottom {
+    width: 100%;
+    img {
+      max-width: 100%;
+    }
+    margin-bottom: -0.25rem;
+  }
+
 }

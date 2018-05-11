@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { ConnectionService } from "./connection.service";
-import {DomSanitizer} from "@angular/platform-browser";
+import {ConnectionService} from "./connection.service";
 
 @Component({
   selector: 'app-root',
@@ -10,13 +9,11 @@ import {DomSanitizer} from "@angular/platform-browser";
 
 export class AppComponent {
   searchTerms = '';
-  currentImage = '';
-  constructor(private connectionService: ConnectionService, public domSanitizer: DomSanitizer){
-    this.connectionService.currentImage.subscribe(value => {
-      this.currentImage = value;
-    })
+  constructor(private connectionService: ConnectionService){
+
   }
   send(){
+    this.connectionService.setSearchTerms(this.searchTerms);
     this.connectionService.getImage(this.searchTerms);
   }
 }

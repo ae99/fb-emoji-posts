@@ -6,12 +6,16 @@ import { FormsModule } from "@angular/forms";
 import {ConnectionService} from "./connection.service";
 import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './post/post.component';
+import { ImageComponent } from './image/image.component';
+import { EmojiRainComponent } from './image/emoji-rain/emoji-rain.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostComponent
+    PostComponent,
+    ImageComponent,
+    EmojiRainComponent
   ],
   imports: [
     BrowserModule,

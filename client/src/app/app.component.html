@@ -1,9 +1,4 @@
 <main>
-  <input type="text" [(ngModel)]="searchTerms">
-  <div class="button" (click)="send()">
-    Create!
-  </div>
-  <img [src]="domSanitizer.bypassSecurityTrustUrl(currentImage)">
-
-  <app-post></app-post>
+  <input placeholder="Enter your post" type="text" [(ngModel)]="searchTerms" (keyup)="send()">
 </main>
+<app-post></app-post>

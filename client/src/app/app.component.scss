@@ -1,18 +1,19 @@
 main {
   text-align: center;
-
-  .button {
-    background-color: #E8E8E8;
-    padding: 1rem;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 0.5rem;
-  }
+  margin: 0 auto;
+  width: 500px;
+  background-color: white;
+  border: 1px solid #dddfe2;
+  border-radius: 4px;
 
   input {
     padding: 1rem;
     border: none;
     border-radius: 0.5rem;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
-
