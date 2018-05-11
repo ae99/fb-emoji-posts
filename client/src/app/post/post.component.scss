@@ -1,0 +1,32 @@
+.post {
+  margin: 0 auto;
+  width: 500px;
+  background-color: white;
+  border: 1px solid #dddfe2;
+  border-radius: 4px;
+  .top {
+    height: 56px;
+    text-align: left;
+    .profile {
+      float: left;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: #eeeeee;
+      border-radius: 50px;
+      margin: 8px;
+    }
+    .meta {
+      float: left;
+      margin: 8px;
+
+      .username {
+        color: #365899;
+      }
+      .time {
+        color: #616770;
+        font-size: 12px;
+      }
+    }
+  }
+}
