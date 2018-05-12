@@ -379,6 +379,11 @@
     "char": "👻",
     "category": "people"
   },
+   "ghost": {
+    "keywords": ["halloween", "spooky", "scary"],
+    "char": "👻",
+    "category": "people"
+  },
   "alien": {
     "keywords": ["UFO", "paul", "weird", "outer_space"],
     "char": "👽",
@@ -445,7 +450,7 @@
     "category": "people"
   },
   "wave": {
-    "keywords": ["hands", "gesture", "goodbye", "solong", "farewell", "hello", "palm"],
+    "keywords": ["hands", "gesture", "goodbye", "solong", "farewell", "hello", "palm", "hey"],
     "char": "👋",
     "category": "people"
   },
@@ -480,7 +485,7 @@
     "category": "people"
   },
   "hand": {
-    "keywords": ["fingers", "stop", "highfive", "palm", "ban", "raised_hand"],
+    "keywords": ["fingers", "stop", "highfive", "palm", "ban", "raised_hand", "hello", "hey"],
     "char": "✋",
     "category": "people"
   },
@@ -495,7 +500,7 @@
     "category": "people"
   },
   "pray": {
-    "keywords": ["please", "hope", "wish", "namaste", "highfive"],
+    "keywords": ["please", "hope", "namaste", "highfive"],
     "char": "🙏",
     "category": "people"
   },
@@ -572,11 +577,6 @@
   "nose": {
     "keywords": ["smell", "sniff"],
     "char": "👃",
-    "category": "people"
-  },
-  "eye": {
-    "keywords": ["face", "look", "see", "watch", "stare"],
-    "char": "👁",
     "category": "people"
   },
   "eyes": {
@@ -880,7 +880,7 @@
     "category": "people"
   },
   "shirt": {
-    "keywords": ["fashion", "cloth", "casual", "tshirt", "tee"],
+    "keywords": ["fashion", "cloth", "casual", "tshirt", "tee", "shirts"],
     "char": "👕",
     "category": "people"
   },
@@ -890,7 +890,7 @@
     "category": "people"
   },
   "necktie": {
-    "keywords": ["shirt", "suitup", "formal", "fashion", "cloth", "business"],
+    "keywords": ["shirt", "suitup", "formal", "fashion", "cloth", "business", "shirts"],
     "char": "👔",
     "category": "people"
   },
@@ -1864,11 +1864,6 @@
     "char": "🍖",
     "category": "food_and_drink"
   },
-  "fried_shrimp": {
-    "keywords": ["food", "animal", "appetizer", "summer"],
-    "char": "🍤",
-    "category": "food_and_drink"
-  },
   "egg": {
     "keywords": ["food", "breakfast", "kitchen"],
     "char": "🍳",
@@ -2840,7 +2835,7 @@
     "category": "travel_and_places"
   },
   "statue_of_liberty": {
-    "keywords": ["american", "newyork"],
+    "keywords": ["american", "newyork", "USA", "U.S.A"],
     "char": "🗽",
     "category": "travel_and_places"
   },
@@ -2944,11 +2939,6 @@
     "char": "⛩",
     "category": "travel_and_places"
   },
-  "watch": {
-    "keywords": ["time", "accessories"],
-    "char": "⌚",
-    "category": "objects"
-  },
   "iphone": {
     "keywords": ["technology", "apple", "gadgets", "dial"],
     "char": "📱",
@@ -2962,16 +2952,6 @@
   "computer": {
     "keywords": ["technology", "laptop", "screen", "display", "monitor", "hack", "hackathon"],
     "char": "💻",
-    "category": "objects"
-  },
-  "keyboard": {
-    "keywords": ["technology", "computer", "type", "input", "text", "hack", "hackathon"],
-    "char": "⌨",
-    "category": "objects"
-  },
-  "desktop_computer": {
-    "keywords": ["technology", "computing", "screen", "hack", "hackathon"],
-    "char": "🖥",
     "category": "objects"
   },
   "printer": {
@@ -3099,34 +3079,9 @@
     "char": "🎛",
     "category": "objects"
   },
-  "stopwatch": {
-    "keywords": ["time", "deadline"],
-    "char": "⏱",
-    "category": "objects"
-  },
   "timer_clock": {
     "keywords": ["alarm"],
     "char": "⏲",
-    "category": "objects"
-  },
-  "alarm_clock": {
-    "keywords": ["time", "wake"],
-    "char": "⏰",
-    "category": "objects"
-  },
-  "mantelpiece_clock": {
-    "keywords": ["time"],
-    "char": "🕰",
-    "category": "objects"
-  },
-  "hourglass_flowing_sand": {
-    "keywords": ["oldschool", "time", "countdown"],
-    "char": "⏳",
-    "category": "objects"
-  },
-  "hourglass": {
-    "keywords": ["time", "clock", "oldschool", "limit", "exam", "quiz", "test"],
-    "char": "⌛",
     "category": "objects"
   },
   "satellite": {
@@ -4169,11 +4124,6 @@
     "char": "🅾️",
     "category": "symbols"
   },
-  "sos": {
-    "keywords": ["help", "red-square", "words", "emergency", "911"],
-    "char": "🆘",
-    "category": "symbols"
-  },
   "no_entry": {
     "keywords": ["limit", "security", "privacy", "bad", "denied", "stop", "circle"],
     "char": "⛔",
@@ -5067,11 +5017,6 @@
   "dz": {
     "keywords": ["algeria", "flag", "nation", "country", "banner"],
     "char": "🇩🇿",
-    "category": "flags"
-  },
-  "as": {
-    "keywords": ["american", "samoa", "flag", "nation", "country", "banner"],
-    "char": "🇦🇸",
     "category": "flags"
   },
   "ad": {
