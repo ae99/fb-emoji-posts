@@ -450,7 +450,7 @@
     "category": "people"
   },
   "+1": {
-    "keywords": ["thumbsup", "yes", "awesome", "good", "agree", "accept", "cool", "hand", "like"],
+    "keywords": ["thumbsup", "yes", "awesome", "good", "agree", "accept", "cool", "hand", "like", "facebook"],
     "char": "👍",
     "category": "people"
   },
@@ -2960,17 +2960,17 @@
     "category": "objects"
   },
   "computer": {
-    "keywords": ["technology", "laptop", "screen", "display", "monitor", "hack"],
+    "keywords": ["technology", "laptop", "screen", "display", "monitor", "hack", "hackathon"],
     "char": "💻",
     "category": "objects"
   },
   "keyboard": {
-    "keywords": ["technology", "computer", "type", "input", "text", "hack"],
+    "keywords": ["technology", "computer", "type", "input", "text", "hack", "hackathon"],
     "char": "⌨",
     "category": "objects"
   },
   "desktop_computer": {
-    "keywords": ["technology", "computing", "screen", "hack"],
+    "keywords": ["technology", "computing", "screen", "hack", "hackathon"],
     "char": "🖥",
     "category": "objects"
   },
