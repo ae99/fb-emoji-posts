@@ -17,11 +17,13 @@
     display: flex;
   	justify-content: center;
   	align-items: center;
+    position: relative;
+    z-index: 10000000;
 
     .inp {
     	display: flex;
-  	justify-content: center;
-  	align-items: center;
+  	  justify-content: center;
+      align-items: center;
     	font-size: 30px;
     	font-weight: 700;
     	color: #fff;
@@ -33,6 +35,10 @@
     	height: 100%;
     	min-height:30px;
     	margin-top: 20px;
+      vertical-align: center;
+      &:active {
+        outline: none;
+      }
     }
   }
 }
