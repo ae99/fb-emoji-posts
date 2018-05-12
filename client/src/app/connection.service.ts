@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class ConnectionService {
-  currentImage: BehaviorSubject<any> = new BehaviorSubject<any>('');
+  currentImages: BehaviorSubject<any> = new BehaviorSubject<any>([]);
   currentEmoji: BehaviorSubject<any> = new BehaviorSubject<any>([]);
 
   currentQuery: BehaviorSubject<string> = new BehaviorSubject<string>('');
@@ -15,8 +15,8 @@ export class ConnectionService {
   }
 
   getImage(query) {
-    this.http.get(`http://localhost:5000/search?query=${encodeURI(query)}`).subscribe(response => {
-      this.currentImage.next(response['img']);
+    this.http.get(`http://localhost:5000/get_image?query=${encodeURI(query)}`).subscribe(response => {
+      this.currentImages.next(response['images']);
     })
   }
 

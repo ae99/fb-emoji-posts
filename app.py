@@ -42,11 +42,13 @@ def text_to_emoji():
 	query_string = request.args
 	text = query_string.get('query', '')
 	emojis = []
+	if "stars" in text:
+		text = text.replace("stars", "star")
 	kwds = getKeywords(text)
 	for wrd in kwds:
 		emoj = emoji_search.query(wrd)
 		[emojis.append(e) for e in emoj]
-	return jsonify({'success': True, 'emojis': emojis, 'keywords': kwds})
+	return jsonify({'success': True, 'emojis': emojis})
 
 @app.route('/get_image')
 def get_image():
@@ -84,4 +86,4 @@ def error(e):
 	return jsonify({'error': True, 'code': e.code, 'message': e.name.lower()}), e.code
 
 if __name__ == '__main__':
-	app.run(port=5000, threaded=True)
+	app.run(port=5000)

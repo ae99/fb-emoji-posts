@@ -540,7 +540,7 @@
     "category": "people"
   },
   "vulcan_salute": {
-    "keywords": ["hand", "fingers", "spock", "star trek"],
+    "keywords": ["hand", "fingers", "spock", "star trek", "star wars", "star", "stars"],
     "char": "🖖",
     "category": "people"
   },
@@ -1605,27 +1605,27 @@
     "category": "animals_and_nature"
   },
   "star": {
-    "keywords": ["night", "yellow"],
+    "keywords": ["night", "yellow", "stars"],
     "char": "⭐",
     "category": "animals_and_nature"
   },
   "star2": {
-    "keywords": ["night", "sparkle", "awesome", "good", "magic"],
+    "keywords": ["night", "sparkle", "awesome", "good", "magic", "stars"],
     "char": "🌟",
     "category": "animals_and_nature"
   },
   "dizzy": {
-    "keywords": ["star", "sparkle", "shoot", "magic"],
+    "keywords": ["star", "sparkle", "shoot", "magic", "stars"],
     "char": "💫",
     "category": "animals_and_nature"
   },
   "sparkles": {
-    "keywords": ["stars", "shine", "shiny", "cool", "awesome", "good", "magic"],
+    "keywords": ["stars", "shine", "shiny", "cool", "awesome", "good", "magic", "stars"],
     "char": "✨",
     "category": "animals_and_nature"
   },
   "comet": {
-    "keywords": ["space"],
+    "keywords": ["space", "stars"],
     "char": "☄",
     "category": "animals_and_nature"
   },
@@ -4329,16 +4329,6 @@
     "char": "💹",
     "category": "symbols"
   },
-  "sparkle": {
-    "keywords": ["stars", "green-square", "awesome", "good", "fireworks"],
-    "char": "❇️",
-    "category": "symbols"
-  },
-  "eight_spoked_asterisk": {
-    "keywords": ["star", "sparkle", "green-square"],
-    "char": "✳️",
-    "category": "symbols"
-  },
   "negative_squared_cross_mark": {
     "keywords": ["x", "green-square", "no", "deny"],
     "char": "❎",
@@ -4487,11 +4477,6 @@
   "cool": {
     "keywords": ["words", "blue-square"],
     "char": "🆒",
-    "category": "symbols"
-  },
-  "new": {
-    "keywords": ["blue-square", "words", "start"],
-    "char": "🆕",
     "category": "symbols"
   },
   "free": {

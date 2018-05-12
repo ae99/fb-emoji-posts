@@ -8,24 +8,12 @@ import {ConnectionService} from "../connection.service";
   styleUrls: ['./image.component.scss']
 })
 export class ImageComponent implements OnInit {
-  currentImage = '';
-  text = '';
-
   currentMode = 0;
   searchTerms = '';
 
-  constructor(private connectionService: ConnectionService, public domSanitizer: DomSanitizer) {
-    this.connectionService.currentImage.subscribe(value => {
-      this.currentImage = value;
-    });
-    this.connectionService.currentQuery.subscribe(text => {
-      this.text = text;
-    })
-  }
+  constructor(private connectionService: ConnectionService, public domSanitizer: DomSanitizer) {}
 
   send(){
-    this.connectionService.setSearchTerms(this.searchTerms);
-    this.connectionService.getImage(this.searchTerms);
     this.connectionService.getEmoji(this.searchTerms);
   }
 

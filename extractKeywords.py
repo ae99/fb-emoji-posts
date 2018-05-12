@@ -4,7 +4,9 @@ from nltk.stem.snowball import SnowballStemmer
 import string
 from collections import Counter
 
-def getKeywords(quote=''):
+def getKeywords(quote):
+
+
     stemmer = SnowballStemmer("english")
     # Breaks sentences into segments
     words = word_tokenize(str(quote))
@@ -16,7 +18,7 @@ def getKeywords(quote=''):
             word = word.strip().replace(punc, '')
         if word.endswith("ing") or word.endswith("ed") or  word.endswith("er"):
             word = stemmer.stem(word)
-        if word !=  '' and len(word) > 1:
+        if word !=  '' and len(word) > 2:
             striped_words.append(word)
 
     # Assigns Pos Tags
@@ -25,10 +27,11 @@ def getKeywords(quote=''):
     # Remove duplicates
     posWords = Counter(nltk.pos_tag(striped_words))
 
+    classifying_tags = ["NNP", "NN", "VBG", "JJ", "VBD"]
     final = []
     for key, values in posWords.items():
         # Select Nouns and Proper Nouns (singular)
-        if key[1] == "NNP" or key[1] == "NN" or key[1] == "VBG" or key[1] == "JJ" or key[1] == "VBD" :
+        if key[1] in classifying_tags :
             final.append(key[0])
     # print(final)
     return final
