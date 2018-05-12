@@ -31,6 +31,8 @@ export class EmojiRainComponent implements OnInit {
         div.style.fontSize = Math.random()*2 + 1 + 'rem';
         div.style.transform = 'rotate(' + Math.random()*540 + 'deg)';
         div.style.position = 'absolute';
+        div.classList.add('nostylelink');
+        div.classList.add('noselect');
         div.innerHTML = this.pickRandomEmoji();
         post.appendChild(div);
         setTimeout(function () {
