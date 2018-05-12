@@ -1,11 +1,8 @@
+from extractKeywords import getKeywords
 from flask import Flask, request, jsonify
 from random import randint
 import json
 import requests
-# from pillow_thing import something as nlpify
-
-def nlpify(strin=''):
-	return strin.split(' ')
 
 class Search:
 	def __init__(self):
@@ -34,7 +31,7 @@ def text_to_emoji():
 	query_string = request.args
 	text = query_string.get('query', '')
 	emojis = []
-	for wrd in text.split(' '):
+	for wrd in getKeywords(text):
 		emoj = emoji_search.query(wrd)
 		[emojis.append(e) for e in emoj]
 	return jsonify({'success': True, 'emojis': emojis})

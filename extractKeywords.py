@@ -3,8 +3,7 @@ from nltk import word_tokenize, pos_tag
 import string
 from collections import Counter
 
-quote = "OMG had the best food ever at the FB Hackathon!"
-def getKeywords(quote):
+def getKeywords(quote=''):
     # Breaks sentences into segments
     words = word_tokenize(str(quote))
     striped_words = []
@@ -32,5 +31,3 @@ def getKeywords(quote):
             final.append(key[0])
     # print(final)
     return final
-
-# getKeywords(quote)
