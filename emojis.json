@@ -1700,13 +1700,8 @@
     "category": "animals_and_nature"
   },
   "snowman": {
-    "keywords": ["winter", "season", "cold", "weather", "christmas", "xmas", "frozen", "without_snow"],
+    "keywords": ["winter", "season", "cold", "weather", "christmas", "xmas", "frozen", "snow"],
     "char": "⛄",
-    "category": "animals_and_nature"
-  },
-  "snowman_with_snow": {
-    "keywords": ["winter", "season", "cold", "weather", "christmas", "xmas", "frozen"],
-    "char": "☃",
     "category": "animals_and_nature"
   },
   "wind_blowing_face": {
@@ -2965,17 +2960,17 @@
     "category": "objects"
   },
   "computer": {
-    "keywords": ["technology", "laptop", "screen", "display", "monitor"],
+    "keywords": ["technology", "laptop", "screen", "display", "monitor", "hack"],
     "char": "💻",
     "category": "objects"
   },
   "keyboard": {
-    "keywords": ["technology", "computer", "type", "input", "text"],
+    "keywords": ["technology", "computer", "type", "input", "text", "hack"],
     "char": "⌨",
     "category": "objects"
   },
   "desktop_computer": {
-    "keywords": ["technology", "computing", "screen"],
+    "keywords": ["technology", "computing", "screen", "hack"],
     "char": "🖥",
     "category": "objects"
   },
