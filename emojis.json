@@ -5060,123 +5060,8 @@
     "category": "symbols"
   },
   "clock1": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕐",
-    "category": "symbols"
-  },
-  "clock2": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕑",
-    "category": "symbols"
-  },
-  "clock3": {
-    "keywords": ["time", "late", "early", "schedule"],
+    "keywords": ["time", "noon", "midnight", "late", "early", "schedule", "dawn", "dusk", "midday", "clock"],
     "char": "🕒",
-    "category": "symbols"
-  },
-  "clock4": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕓",
-    "category": "symbols"
-  },
-  "clock5": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕔",
-    "category": "symbols"
-  },
-  "clock6": {
-    "keywords": ["time", "late", "early", "schedule", "dawn", "dusk"],
-    "char": "🕕",
-    "category": "symbols"
-  },
-  "clock7": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕖",
-    "category": "symbols"
-  },
-  "clock8": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕗",
-    "category": "symbols"
-  },
-  "clock9": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕘",
-    "category": "symbols"
-  },
-  "clock10": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕙",
-    "category": "symbols"
-  },
-  "clock11": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕚",
-    "category": "symbols"
-  },
-  "clock12": {
-    "keywords": ["time", "noon", "midnight", "midday", "late", "early", "schedule"],
-    "char": "🕛",
-    "category": "symbols"
-  },
-  "clock130": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕜",
-    "category": "symbols"
-  },
-  "clock230": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕝",
-    "category": "symbols"
-  },
-  "clock330": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕞",
-    "category": "symbols"
-  },
-  "clock430": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕟",
-    "category": "symbols"
-  },
-  "clock530": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕠",
-    "category": "symbols"
-  },
-  "clock630": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕡",
-    "category": "symbols"
-  },
-  "clock730": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕢",
-    "category": "symbols"
-  },
-  "clock830": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕣",
-    "category": "symbols"
-  },
-  "clock930": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕤",
-    "category": "symbols"
-  },
-  "clock1030": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕥",
-    "category": "symbols"
-  },
-  "clock1130": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕦",
-    "category": "symbols"
-  },
-  "clock1230": {
-    "keywords": ["time", "late", "early", "schedule"],
-    "char": "🕧",
     "category": "symbols"
   },
   "af": {
@@ -5387,11 +5272,6 @@
   "ic": {
     "keywords": ["canary", "islands", "flag", "nation", "country", "banner"],
     "char": "🇮🇨",
-    "category": "flags"
-  },
-  "ky": {
-    "keywords": ["cayman", "islands", "flag", "nation", "country", "banner"],
-    "char": "🇰🇾",
     "category": "flags"
   },
   "cf": {
@@ -5704,11 +5584,6 @@
     "char": "🇮🇪",
     "category": "flags"
   },
-  "im": {
-    "keywords": ["isle", "man", "flag", "nation", "country", "banner"],
-    "char": "🇮🇲",
-    "category": "flags"
-  },
   "il": {
     "keywords": ["israel", "flag", "nation", "country", "banner"],
     "char": "🇮🇱",
@@ -6002,11 +5877,6 @@
   "no": {
     "keywords": ["norway", "flag", "nation", "country", "banner"],
     "char": "🇳🇴",
-    "category": "flags"
-  },
-  "om": {
-    "keywords": ["oman", "flag", "nation", "country", "banner"],
-    "char": "🇴🇲",
     "category": "flags"
   },
   "pk": {
