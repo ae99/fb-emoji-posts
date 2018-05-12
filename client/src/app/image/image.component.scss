@@ -1,11 +1,10 @@
 .image {
   width: 100%;
   height: 300px;
-  background-color: #fc9842;
-  background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
   position: relative;
 
   .text {
+  	background-color: #0000001f;
   	margin-top: -300px;
     width: 500px;
     height: 300px;
@@ -35,4 +34,24 @@
     	margin-top: 20px;
     }
   }
+}
+
+.image.g0 {
+	background-color: #7ee8fa;
+	background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+}
+
+.image.g1 {
+	background-color: #f7b42c;
+	background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+}
+
+.image.g2 {
+	background-color: #9eabe4;
+	background-image: linear-gradient(315deg, #9eabe4 0%, #77eed8 74%);
+}
+
+.image.g3 {
+	background-color: #1fd1f9;
+	background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 }
