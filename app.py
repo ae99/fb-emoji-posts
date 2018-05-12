@@ -9,12 +9,19 @@ class Search:
 		with open('emojis.json', 'r') as f:
 			self.emojis = json.loads(f.read())
 
+		for k,v in self.emojis.iteritems():
+			self.emojis[k]['keywords'].append(k)
+
 	def query(self, word=''):
 		matches = []
 		for v in self.emojis.values():
 			for kw in v.get('keywords', None):
+				word = " ".join(word.split('_'))
 				if word.lower() in kw and (withinone(kw, word, 1) or len(kw) == len(word)):
-					matches.append(v.get('char', None))
+					a = v.get('char', None)
+					if a:
+						matches.append(a)
+
 		return matches
 
 def withinone(a, b, c):
@@ -35,19 +42,21 @@ def text_to_emoji():
 	query_string = request.args
 	text = query_string.get('query', '')
 	emojis = []
-	for wrd in getKeywords(text):
+	kwds = getKeywords(text)
+	for wrd in kwds:
 		emoj = emoji_search.query(wrd)
 		[emojis.append(e) for e in emoj]
-	return jsonify({'success': True, 'emojis': emojis})
+	return jsonify({'success': True, 'emojis': emojis, 'keywords': kwds})
 
 @app.route('/get_image')
 def get_image():
 	req = 'https://pixabay.com/api/?key=8972748-543159674e6cf6356e147ddcd&image_type=photo&pretty=true&q={}'
 	query_string = request.args
-	query_arg = '{}+{}'.format(query_string.get('keyword', ''), query_string.get('color', ''))
+	kwds = getKeywords(query_string.get('query', ''))
+	query_arg = '+'.join(kwds)
 	if query_arg[0] == '+':
 		query_arg = query_arg[1:]
-	if query_arg[-1] == '+':
+	if len(query_arg) > 2 and query_arg[-1] == '+':
 		query_arg = query_arg[0:len(query_arg)-1]
 
 	r = requests.get(req.format(query_arg))
@@ -57,8 +66,7 @@ def get_image():
 		print('{}{}'.format(r.status_code, 'error'))
 
 	ran = randint(0, 4)
-
-	images = [x['largeImageURL'] for x in j['hits']]
+	images = [x['webformatURL'] for x in j['hits']]
 
 	return jsonify({'success': True, 'images': images})
 
