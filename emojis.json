@@ -1,6 +1,6 @@
 {
   "grinning": {
-    "keywords": ["face", "smile", "happy", "joy", ":D", "grin"],
+    "keywords": ["face", "smile", "happy", "joy", ":D", "grin", ":)"],
     "char": "😀",
     "category": "people"
   },
@@ -1535,62 +1535,62 @@
     "category": "animals_and_nature"
   },
   "full_moon": {
-    "keywords": ["nature", "yellow", "twilight", "planet", "space", "night", "evening", "sleep"],
+    "keywords": ["nature", "yellow", "twilight", "space", "night", "evening", "sleep"],
     "char": "🌕",
     "category": "animals_and_nature"
   },
   "waning_gibbous_moon": {
-    "keywords": ["nature", "twilight", "planet", "space", "night", "evening", "sleep", "waxing_gibbous_moon"],
+    "keywords": ["nature", "twilight", "space", "night", "evening", "sleep", "waxing_gibbous_moon"],
     "char": "🌖",
     "category": "animals_and_nature"
   },
   "last_quarter_moon": {
-    "keywords": ["nature", "twilight", "planet", "space", "night", "evening", "sleep"],
+    "keywords": ["nature", "twilight", "space", "night", "evening", "sleep"],
     "char": "🌗",
     "category": "animals_and_nature"
   },
   "waning_crescent_moon": {
-    "keywords": ["nature", "twilight", "planet", "space", "night", "evening", "sleep"],
+    "keywords": ["nature", "twilight", "space", "night", "evening", "sleep"],
     "char": "🌘",
     "category": "animals_and_nature"
   },
   "new_moon": {
-    "keywords": ["nature", "twilight", "planet", "space", "night", "evening", "sleep"],
+    "keywords": ["nature", "twilight", "space", "night", "evening", "sleep"],
     "char": "🌑",
     "category": "animals_and_nature"
   },
   "waxing_crescent_moon": {
-    "keywords": ["nature", "twilight", "planet", "space", "night", "evening", "sleep"],
+    "keywords": ["nature", "twilight", "space", "night", "evening", "sleep"],
     "char": "🌒",
     "category": "animals_and_nature"
   },
   "first_quarter_moon": {
-    "keywords": ["nature", "twilight", "planet", "space", "night", "evening", "sleep"],
+    "keywords": ["nature", "twilight", "space", "night", "evening", "sleep"],
     "char": "🌓",
     "category": "animals_and_nature"
   },
   "moon": {
-    "keywords": ["nature", "night", "sky", "gray", "twilight", "planet", "space", "evening", "sleep"],
+    "keywords": ["nature", "night", "sky", "gray", "twilight", "space", "evening", "sleep"],
     "char": "🌔",
     "category": "animals_and_nature"
   },
   "new_moon_with_face": {
-    "keywords": ["nature", "twilight", "planet", "space", "night", "evening", "sleep"],
+    "keywords": ["nature", "twilight", "space", "night", "evening", "sleep"],
     "char": "🌚",
     "category": "animals_and_nature"
   },
   "full_moon_with_face": {
-    "keywords": ["nature", "twilight", "planet", "space", "night", "evening", "sleep"],
+    "keywords": ["nature", "twilight", "space", "night", "evening", "sleep"],
     "char": "🌝",
     "category": "animals_and_nature"
   },
   "first_quarter_moon_with_face": {
-    "keywords": ["nature", "twilight", "planet", "space", "night", "evening", "sleep"],
+    "keywords": ["nature", "twilight", "space", "night", "evening", "sleep"],
     "char": "🌛",
     "category": "animals_and_nature"
   },
   "last_quarter_moon_with_face": {
-    "keywords": ["nature", "twilight", "planet", "space", "night", "evening", "sleep"],
+    "keywords": ["nature", "twilight", "space", "night", "evening", "sleep"],
     "char": "🌜",
     "category": "animals_and_nature"
   },
@@ -2550,22 +2550,22 @@
     "category": "travel_and_places"
   },
   "small_airplane": {
-    "keywords": ["flight", "transportation", "fly", "vehicle"],
+    "keywords": ["flight", "transportation", "fly", "vehicle", "plane"],
     "char": "🛩",
     "category": "travel_and_places"
   },
   "airplane": {
-    "keywords": ["vehicle", "transportation", "flight", "fly"],
+    "keywords": ["vehicle", "transportation", "flight", "fly", "plane"],
     "char": "✈️",
     "category": "travel_and_places"
   },
   "airplane_departure": {
-    "keywords": ["airport", "flight", "landing"],
+    "keywords": ["airport", "flight", "landing", "plane", "take-off", "departure", "leaving", "depart"],
     "char": "🛫",
     "category": "travel_and_places"
   },
   "airplane_arrival": {
-    "keywords": ["airport", "flight", "boarding"],
+    "keywords": ["airport", "flight", "boarding", "plane", "landing", "arriving", "arrival"],
     "char": "🛬",
     "category": "travel_and_places"
   },
@@ -2575,7 +2575,7 @@
     "category": "travel_and_places"
   },
   "motor_boat": {
-    "keywords": ["ship"],
+    "keywords": ["ship", "boat"],
     "char": "🛥",
     "category": "travel_and_places"
   },
@@ -2770,17 +2770,17 @@
     "category": "travel_and_places"
   },
   "city_sunrise": {
-    "keywords": ["photo", "good morning", "dawn"],
+    "keywords": ["photo", "good morning", "dawn", "sunrise"],
     "char": "🌇",
     "category": "travel_and_places"
   },
   "city_sunset": {
-    "keywords": ["photo", "evening", "sky", "buildings"],
+    "keywords": ["photo", "evening", "sky", "buildings", "sunset"],
     "char": "🌆",
     "category": "travel_and_places"
   },
   "cityscape": {
-    "keywords": ["photo", "night life", "urban"],
+    "keywords": ["photo", "night life", "urban", "city", "nyc", "london", "sydney", "new york city", "syd", "la", "los angeles"],
     "char": "🏙",
     "category": "travel_and_places"
   },
@@ -2820,7 +2820,7 @@
     "category": "travel_and_places"
   },
   "buildings": {
-    "keywords": ["houses", "photo"],
+    "keywords": ["houses", "photo", "town"],
     "char": "🏘",
     "category": "travel_and_places"
   },
@@ -3005,12 +3005,12 @@
     "category": "objects"
   },
   "floppy_disk": {
-    "keywords": ["oldschool", "technology", "save", "90s", "80s"],
+    "keywords": ["oldschool", "technology", "save", "90s", "80s", "floppy", "floppy disk"],
     "char": "💾",
     "category": "objects"
   },
   "cd": {
-    "keywords": ["technology", "dvd", "disk", "disc", "90s"],
+    "keywords": ["technology", "dvd", "disk", "disc", "90s", "music"],
     "char": "💿",
     "category": "objects"
   },
@@ -3025,7 +3025,7 @@
     "category": "objects"
   },
   "camera": {
-    "keywords": ["gadgets", "photography"],
+    "keywords": ["gadgets", "photography", "photo"],
     "char": "📷",
     "category": "objects"
   },
@@ -3460,7 +3460,7 @@
     "category": "objects"
   },
   "gift": {
-    "keywords": ["present", "birthday", "christmas", "xmas"],
+    "keywords": ["present", "birthday", "christmas", "xmas", "wrapping", "gift"],
     "char": "🎁",
     "category": "objects"
   },
@@ -6273,95 +6273,5 @@
     "keywords": ["zambia", "flag", "nation", "country", "banner"],
     "char": "🇿🇲",
     "category": "flags"
-  },
-  "zw": {
-    "keywords": ["zimbabwe", "flag", "nation", "country", "banner"],
-    "char": "🇿🇼",
-    "category": "flags"
-  },
-  "octocat": {
-    "keywords": ["animal", "octopus", "github", "custom_"],
-    "char": null,
-    "category": "_custom"
-  },
-  "shipit": {
-    "keywords": ["squirrel", "detective", "animal", "sherlock", "inspector", "custom_"],
-    "char": null,
-    "category": "_custom"
-  },
-  "bowtie": {
-    "keywords": ["face", "formal", "fashion", "suit", "classy", "magic", "circus"],
-    "char": null,
-    "category": "_custom"
-  },
-  "neckbeard": {
-    "keywords": ["nerdy", "face", "custom_"],
-    "char": null,
-    "category": "_custom"
-  },
-  "metal": {
-    "keywords": ["fingers", "rocknroll", "concert", "band", "custom_"],
-    "char": null,
-    "category": "_custom"
-  },
-  "fu": {
-    "keywords": ["fuck", "finger", "dislike", "thumbsdown", "disapprove", "no", "custom_"],
-    "char": null,
-    "category": "_custom"
-  },
-  "trollface": {
-    "keywords": ["internet", "meme", "custom_"],
-    "char": null,
-    "category": "_custom"
-  },
-  "godmode": {
-    "keywords": ["doom", "oldschool"],
-    "char": null,
-    "category": "_custom"
-  },
-  "goberserk": {
-    "keywords": ["doom", "rage", "bloody", "hurt"],
-    "char": null,
-    "category": "_custom"
-  },
-  "finnadie": {
-    "keywords": ["doom", "oldschool"],
-    "char": null,
-    "category": "_custom"
-  },
-  "feelsgood": {
-    "keywords": ["doom", "oldschool"],
-    "char": null,
-    "category": "_custom"
-  },
-  "rage1": {
-    "keywords": ["angry", "mad", "hate", "despise"],
-    "char": null,
-    "category": "_custom"
-  },
-  "rage2": {
-    "keywords": ["angry", "mad", "hate", "despise"],
-    "char": null,
-    "category": "_custom"
-  },
-  "rage3": {
-    "keywords": ["angry", "mad", "hate", "despise"],
-    "char": null,
-    "category": "_custom"
-  },
-  "rage4": {
-    "keywords": ["angry", "mad", "hate", "despise"],
-    "char": null,
-    "category": "_custom"
-  },
-  "suspect": {
-    "keywords": ["mad", "custom_"],
-    "char": null,
-    "category": "_custom"
-  },
-  "hurtrealbad": {
-    "keywords": ["mad", "injured", "doom", "oldschool", "custom_"],
-    "char": null,
-    "category": "_custom"
   }
 }
