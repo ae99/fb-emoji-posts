@@ -4,8 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class ConnectionService {
-  currentImage: BehaviorSubject<any> = new BehaviorSubject('');
-  currentImage
+  currentImage: BehaviorSubject<any> = new BehaviorSubject<any>('');
 
   currentQuery: BehaviorSubject<string> = new BehaviorSubject<string>('');
   constructor(private http: HttpClient) {}
