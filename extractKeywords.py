@@ -4,7 +4,13 @@ from nltk.stem.snowball import SnowballStemmer
 import string
 from collections import Counter
 
+past_quotes = {}
+
 def getKeywords(quote):
+    if quote in past_quotes
+    if past_quotes[quote]:
+        return past_quotes[quote]
+
     stemmer = SnowballStemmer("english")
     # Breaks sentences into segments
     words = word_tokenize(str(quote))
@@ -32,4 +38,5 @@ def getKeywords(quote):
         if key[1] in classifying_tags :
             final.append(key[0])
     # print(final)
+    past_quotes[quote] = final
     return final
