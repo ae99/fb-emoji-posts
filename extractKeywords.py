@@ -3,11 +3,7 @@ from nltk import word_tokenize, pos_tag
 import string
 from collections import Counter
 
-<<<<<<< HEAD
-def getKeywords(quote):
-=======
 def getKeywords(quote=''):
->>>>>>> 1c707b51df70e9cb3c607d4fe46c839609f6570e
     # Breaks sentences into segments
     words = word_tokenize(str(quote))
     striped_words = []
@@ -34,8 +30,4 @@ def getKeywords(quote=''):
         if key[1] == "NNP" or key[1] == "NN" or key[1] == "VBG":
             final.append(key[0])
     # print(final)
-<<<<<<< HEAD
     return final
-=======
-    return final
->>>>>>> 1c707b51df70e9cb3c607d4fe46c839609f6570e
