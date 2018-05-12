@@ -1179,11 +1179,6 @@
     "char": "🐛",
     "category": "animals_and_nature"
   },
-  "snail": {
-    "keywords": ["slow", "animal", "shell"],
-    "char": "🐌",
-    "category": "animals_and_nature"
-  },
   "beetle": {
     "keywords": ["animal", "insect", "nature", "ladybug"],
     "char": "🐞",
