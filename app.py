@@ -13,7 +13,6 @@ class Search:
 		matches = []
 		for v in self.emojis.values():
 			for kw in v.get('keywords', None):
-				print word
 				if word.lower() in kw and (withinone(kw, word, 1) or len(kw) == len(word)):
 					matches.append(v.get('char', None))
 		return matches
