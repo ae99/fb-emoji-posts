@@ -4,7 +4,7 @@
   position: relative;
 
   .text {
-  	background-color: #0000001f;
+  	background-color: #0000001a;
   	margin-top: -300px;
     width: 500px;
     height: 300px;
@@ -59,4 +59,11 @@
 .image.g3 {
 	background-color: #1fd1f9;
 	background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+}
+
+.image.g4 {
+	background-color: #abe9cd;
+background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+
+
 }

@@ -31,7 +31,7 @@ export class EmojiRainComponent implements OnInit {
         div.setAttribute("class", "smile");
         div.style.left = `${x}px`;
         div.style.top = '-50px';
-        div.style.fontSize = Math.random()*2 + 1 + 'rem';
+        div.style.fontSize = Math.random()*2.5 + 1.5 + 'rem';
         div.style.transform = 'rotate(' + Math.random()*540 + 'deg)';
         div.style.position = 'absolute';
         div.classList.add('nostylelink');
