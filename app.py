@@ -9,12 +9,19 @@ class Search:
 		with open('emojis.json', 'r') as f:
 			self.emojis = json.loads(f.read())
 
+		for k,v in self.emojis.iteritems():
+			self.emojis[k]['keywords'].append(k)
+
 	def query(self, word=''):
 		matches = []
 		for v in self.emojis.values():
 			for kw in v.get('keywords', None):
+				word = " ".join(word.split('_'))
 				if word.lower() in kw and (withinone(kw, word, 1) or len(kw) == len(word)):
-					matches.append(v.get('char', None))
+					a = v.get('char', None)
+					if a:
+						matches.append(a)
+
 		return matches
 
 def withinone(a, b, c):
