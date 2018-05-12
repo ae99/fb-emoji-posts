@@ -11,13 +11,16 @@ export class EmojiRainComponent implements OnInit {
 
   ngOnInit() {
     let post = document.getElementById("post");
-    let delay = 100;
+    let delay = 200;
     function doSetTimeout(x, loop) {
       setTimeout(function () {
         let div = document.createElement('div');
         div.setAttribute("class", "smile");
         div.style.left = `${x}px`;
         div.style.top = '-20px';
+        div.style.fontSize = Math.random()*2 + 1 + 'rem';
+        div.style.transform = 'rotate(' + Math.random()*180 + 'deg)';
+
         div.style.position = 'absolute';
         div.innerHTML = "🥕️";
         post.appendChild(div);

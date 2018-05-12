@@ -10,7 +10,7 @@
   -webkit-animation: fall 5s infinite;
   animation: fall 5s infinite;
   animation-timing-function: linear;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 
@@ -19,7 +19,7 @@
     top: -20px;
   }
   to {
-    top: 200px;
+    transform: translateY(200px)
   }
 }
 @keyframes fall {
@@ -27,6 +27,6 @@
     top: -20px;
   }
   to {
-    top: 300px;
+    transform: translateY(300px)
   }
 }
