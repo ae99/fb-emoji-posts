@@ -1,7 +1,7 @@
 # fb-hack
 
-NLTK 
+NLTK
 Mac:
 Install NLTK: run sudo pip install -U nltk
 Install Numpy (optional): run sudo pip install -U numpy
-Test installation: run python then type import nltk
+Test installation: run python then type import nltk and nltk.download('punkt') and nltk.download('averaged_perceptron_tagger')
