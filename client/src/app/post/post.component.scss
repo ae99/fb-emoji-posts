@@ -5,7 +5,7 @@
   border: 1px solid #dddfe2;
   border-radius: 4px;
   overflow: hidden;
-  margin-top: 0.5rem;
+  margin-top: 3rem;
   .top {
     height: 56px;
     text-align: left;
@@ -33,6 +33,7 @@
   }
   .bottom {
     width: 100%;
+    position: relative;
     img {
       max-width: 100%;
     }

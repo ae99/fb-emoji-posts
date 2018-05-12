@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './post/post.component';
 import { ImageComponent } from './image/image.component';
 import { EmojiRainComponent } from './image/emoji-rain/emoji-rain.component';
+import { Autosize } from 'angular2-autosize';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { EmojiRainComponent } from './image/emoji-rain/emoji-rain.component';
     AppComponent,
     PostComponent,
     ImageComponent,
-    EmojiRainComponent
+    EmojiRainComponent,
+    Autosize
   ],
   imports: [
     BrowserModule,
