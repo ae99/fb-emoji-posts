@@ -9,11 +9,11 @@ import {ConnectionService} from "./connection.service";
 
 export class AppComponent {
   searchTerms = '';
-  constructor(private connectionService: ConnectionService){
+  constructor(private connectionService: ConnectionService){}
 
-  }
   send(){
     this.connectionService.setSearchTerms(this.searchTerms);
     this.connectionService.getImage(this.searchTerms);
+    this.connectionService.getEmoji(this.searchTerms);
   }
 }

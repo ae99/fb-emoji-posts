@@ -12,8 +12,9 @@ class Search:
 	def query(self, word=''):
 		matches = []
 		for v in self.emojis.values():
-			if word.lower() in v.get('keywords', None):
-				matches.append(v.get('char', None))
+			for kw in v.get('keywords', None):
+				if word.lower() in kw:
+					matches.append(v.get('char', None))
 		return matches
 
 emoji_search = Search()

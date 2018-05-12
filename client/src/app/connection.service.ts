@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class ConnectionService {
   currentImage: BehaviorSubject<any> = new BehaviorSubject<any>('');
+  currentEmoji: BehaviorSubject<any> = new BehaviorSubject<any>([]);
 
   currentQuery: BehaviorSubject<string> = new BehaviorSubject<string>('');
   constructor(private http: HttpClient) {}
@@ -20,6 +21,8 @@ export class ConnectionService {
   }
 
   getEmoji(query) {
-
+    this.http.get(`http://localhost:5000/text_to_emoji?query=${encodeURI(query)}`).subscribe(response => {
+      this.currentEmoji.next(response['emojis']);
+    })
   }
 }
