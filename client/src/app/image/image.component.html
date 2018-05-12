@@ -1,7 +1,7 @@
-<div class="image">
+<div class="image" (click)="textarea.select()">
   <app-emoji-rain></app-emoji-rain>
 
-  <div class="text noselect">
-    <textarea type="" name="" value="hello" class="inp noselect" maxlength="85"></textarea>
+  <div class="text">
+    <textarea autosize #textarea class="inp nostylelink" maxlength="85"  type="text" [(ngModel)]="searchTerms" (keyup)="send()"></textarea>
   </div>
 </div>

@@ -12,6 +12,7 @@ export class ImageComponent implements OnInit {
   text = '';
 
   currentMode = 0;
+  searchTerms = '';
 
   constructor(private connectionService: ConnectionService, public domSanitizer: DomSanitizer) {
     this.connectionService.currentImage.subscribe(value => {
@@ -21,6 +22,13 @@ export class ImageComponent implements OnInit {
       this.text = text;
     })
   }
+
+  send(){
+    this.connectionService.setSearchTerms(this.searchTerms);
+    this.connectionService.getImage(this.searchTerms);
+    this.connectionService.getEmoji(this.searchTerms);
+  }
+
 
 
 
