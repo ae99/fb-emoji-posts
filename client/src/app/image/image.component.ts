@@ -15,9 +15,6 @@ export class ImageComponent implements OnInit {
   searchTerms = '';
 
   constructor(private connectionService: ConnectionService, public domSanitizer: DomSanitizer) {
-    this.connectionService.currentImage.subscribe(value => {
-      this.currentImage = value;
-    });
     this.connectionService.currentQuery.subscribe(text => {
       this.text = text;
     })
