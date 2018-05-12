@@ -11,22 +11,15 @@
   animation: fall 5s infinite;
   animation-timing-function: linear;
   font-size: 3rem;
+  pointer-events: none;
 }
 
 
-@-webkit-keyframes fall {
-  from {
-    top: -20px;
-  }
-  to {
-    transform: translateY(200px)
-  }
-}
 @keyframes fall {
   from {
-    top: -20px;
+    top: -50px;
   }
   to {
-    transform: translateY(300px)
+    transform: translateY(350px)
   }
 }
