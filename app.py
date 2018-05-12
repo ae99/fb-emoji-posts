@@ -44,6 +44,8 @@ def text_to_emoji():
 	emojis = []
 	if "stars" in text:
 		text = text.replace("stars", "star")
+	if "shirts" in text:
+		text = text.replace("shirts", "shirt")
 	kwds = getKeywords(text)
 	for wrd in kwds:
 		emoj = emoji_search.query(wrd)

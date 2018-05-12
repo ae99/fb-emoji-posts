@@ -2550,7 +2550,7 @@
     "category": "travel_and_places"
   },
   "airplane": {
-    "keywords": ["vehicle", "transportation", "flight", "fly", "plane"],
+    "keywords": ["vehicle", "transportation", "flight", "fly", "plane", "america"],
     "char": "✈️",
     "category": "travel_and_places"
   },
@@ -2800,7 +2800,7 @@
     "category": "travel_and_places"
   },
   "sparkler": {
-    "keywords": ["stars", "night", "shine"],
+    "keywords": ["stars", "night", "shine", "party"],
     "char": "🎇",
     "category": "travel_and_places"
   },
@@ -3262,11 +3262,6 @@
   "amphora": {
     "keywords": ["vase", "jar"],
     "char": "🏺",
-    "category": "objects"
-  },
-  "crystal_ball": {
-    "keywords": ["disco", "party", "magic", "circus", "fortune_teller"],
-    "char": "🔮",
     "category": "objects"
   },
   "prayer_beads": {
@@ -4302,11 +4297,6 @@
   "loop": {
     "keywords": ["tape", "cassette"],
     "char": "➿",
-    "category": "symbols"
-  },
-  "globe_with_meridians": {
-    "keywords": ["earth", "international", "world", "internet", "interweb", "i18n"],
-    "char": "🌐",
     "category": "symbols"
   },
   "m": {
