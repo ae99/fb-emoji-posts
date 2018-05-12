@@ -1,0 +1,25 @@
+#post {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+}
+:host ::ng-deep .smile {
+  position: absolute;
+  -webkit-animation: fall 5s infinite;
+  animation: fall 5s infinite;
+  animation-timing-function: linear;
+  font-size: 3rem;
+  pointer-events: none;
+}
+
+
+@keyframes fall {
+  from {
+    top: -50px;
+  }
+  to {
+    transform: translateY(350px)
+  }
+}

@@ -1,9 +1,8 @@
+from extractKeywords import getKeywords
 from flask import Flask, request, jsonify
+from random import randint
 import json
-# from pillow_thing import something as nlpify
-
-def nlpify(strin=''):
-	return strin.split(' ')
+import requests
 
 class Search:
 	def __init__(self):
@@ -13,8 +12,9 @@ class Search:
 	def query(self, word=''):
 		matches = []
 		for v in self.emojis.values():
-			if word.lower() in v.get('keywords', None):
-				matches.append(v.get('char', None))
+			for kw in v.get('keywords', None):
+				if word.lower() in kw:
+					matches.append(v.get('char', None))
 		return matches
 
 emoji_search = Search()
@@ -27,16 +27,38 @@ app.debug = True
 def index():
 	return jsonify({})
 
-@app.route('/search')
-def get():
+@app.route('/text_to_emoji')
+def text_to_emoji():
 	query_string = request.args
-	text_to_print = query_string.get('query', '')
-	nlp_data = nlpify(text_to_print)
+	text = query_string.get('query', '')
 	emojis = []
-	for wrd in nlp_data:
+	for wrd in getKeywords(text):
 		emoj = emoji_search.query(wrd)
 		[emojis.append(e) for e in emoj]
 	return jsonify({'success': True, 'emojis': emojis})
+
+@app.route('/get_image')
+def get_image():
+	req = 'https://pixabay.com/api/?key=8972748-543159674e6cf6356e147ddcd&image_type=photo&pretty=true&q={}'
+	query_string = request.args
+	query_arg = '{}+{}'.format(query_string.get('keyword', ''), query_string.get('color', ''))
+	if query_arg[0] == '+':
+		query_arg = query_arg[1:]
+	if query_arg[-1] == '+':
+		query_arg = query_arg[0:len(query_arg)-1]
+
+	r = requests.get(req.format(query_arg))
+	j = r.json()
+
+	if r.status_code != 200:
+		print('{}{}'.format(r.status_code, 'error'))
+
+	ran = randint(0, 4)
+
+	images = [x['largeImageURL'] for x in j['hits']]
+
+	return jsonify({'success': True, 'images': images})
+
 
 @app.after_request
 def add_ua_compat(response):

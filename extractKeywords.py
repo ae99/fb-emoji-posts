@@ -4,7 +4,7 @@ from nltk.stem.snowball import SnowballStemmer
 import string
 from collections import Counter
 
-def getKeywords(quote):
+def getKeywords(quote=''):
     stemmer = SnowballStemmer("english")
     # Breaks sentences into segments
     words = word_tokenize(str(quote))

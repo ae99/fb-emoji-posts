@@ -450,7 +450,7 @@
     "category": "people"
   },
   "+1": {
-    "keywords": ["thumbsup", "yes", "awesome", "good", "agree", "accept", "cool", "hand", "like"],
+    "keywords": ["thumbsup", "yes", "awesome", "good", "agree", "accept", "cool", "hand", "like", "facebook"],
     "char": "👍",
     "category": "people"
   },
@@ -1700,13 +1700,8 @@
     "category": "animals_and_nature"
   },
   "snowman": {
-    "keywords": ["winter", "season", "cold", "weather", "christmas", "xmas", "frozen", "without_snow"],
+    "keywords": ["winter", "season", "cold", "weather", "christmas", "xmas", "frozen", "snow"],
     "char": "⛄",
-    "category": "animals_and_nature"
-  },
-  "snowman_with_snow": {
-    "keywords": ["winter", "season", "cold", "weather", "christmas", "xmas", "frozen"],
-    "char": "☃",
     "category": "animals_and_nature"
   },
   "wind_blowing_face": {
@@ -2965,17 +2960,17 @@
     "category": "objects"
   },
   "computer": {
-    "keywords": ["technology", "laptop", "screen", "display", "monitor"],
+    "keywords": ["technology", "laptop", "screen", "display", "monitor", "hack", "hackathon"],
     "char": "💻",
     "category": "objects"
   },
   "keyboard": {
-    "keywords": ["technology", "computer", "type", "input", "text"],
+    "keywords": ["technology", "computer", "type", "input", "text", "hack", "hackathon"],
     "char": "⌨",
     "category": "objects"
   },
   "desktop_computer": {
-    "keywords": ["technology", "computing", "screen"],
+    "keywords": ["technology", "computing", "screen", "hack", "hackathon"],
     "char": "🖥",
     "category": "objects"
   },
@@ -5417,11 +5412,6 @@
   "cn": {
     "keywords": ["china", "chinese", "prc", "flag", "country", "nation", "banner"],
     "char": "🇨🇳",
-    "category": "flags"
-  },
-  "cx": {
-    "keywords": ["christmas", "island", "flag", "nation", "country", "banner"],
-    "char": "🇨🇽",
     "category": "flags"
   },
   "cc": {
