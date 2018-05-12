@@ -23,6 +23,8 @@ export class EmojiRainComponent implements OnInit {
 
         div.style.position = 'absolute';
         div.innerHTML = "🥕️";
+        div.classList.add('nostylelink');
+        div.classList.add('noselect');
         post.appendChild(div);
         setTimeout(function () {
           div.remove()
