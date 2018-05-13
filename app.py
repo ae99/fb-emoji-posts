@@ -30,7 +30,7 @@ emoji_search = Search()
 
 app = Flask(__name__)
 
-app.debug = True
+app.debug = False
 
 @app.route('/')
 def index():
@@ -65,4 +65,4 @@ def error(e):
 	return jsonify({'error': True, 'code': e.code, 'message': e.name.lower()}), e.code
 
 if __name__ == '__main__':
-	app.run(port=5000)
+	app.run(port=80)
