@@ -15,14 +15,14 @@
 ![Send us to America!][gif4]
 
 ## Installation
-Install
+For the server:
 ```bash
 pip3 install -r server/requirements.txt
 ./server/run.sh
 ```
+<br>
 
-
-For the client, install Angular CLI:
+For the client:
 ```bash
 cd client
 npm install
