@@ -14,7 +14,7 @@ def getKeywords(quote):
         # Removes punctuation
         for punc in string.punctuation:
             word = word.strip().replace(punc, '')
-        if word.endswith("ing") or word.endswith("ed") or  word.endswith("er"):
+        if word.endswith("ing") or word.endswith("ed") or  word.endswith("er") or word.endswith("s"):
             word = stemmer.stem(word)
         if word !=  '' and len(word) > 2:
             striped_words.append(word)
