@@ -6,10 +6,10 @@ import requests
 
 class Search:
 	def __init__(self):
-		with open('emojis.json', 'r') as f:
+		with open('emojis.json', 'r', encoding='utf-8') as f:
 			self.emojis = json.loads(f.read())
 
-		for k,v in self.emojis.iteritems():
+		for k,v in self.emojis.items():
 			self.emojis[k]['keywords'].append(k)
 
 	def query(self, word=''):
