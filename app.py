@@ -3,6 +3,10 @@ from flask import Flask, request, jsonify
 from random import randint
 import json
 
+import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+
 class Search:
 	def __init__(self):
 		with open('emojis.json', 'r') as f:
