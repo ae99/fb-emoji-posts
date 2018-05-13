@@ -9,7 +9,7 @@ class Search:
 		with open('emojis.json', 'r') as f:
 			self.emojis = json.loads(f.read())
 
-		for k,v in self.emojis.iteritems():
+		for k,v in self.emojis.items():
 			self.emojis[k]['keywords'].append(k)
 
 	def query(self, word=''):
