@@ -16,9 +16,9 @@
 
 ## Installation
 Install
-```shell
-pip3 install -r requirements.txt
-python3 app.py
+```bash
+pip3 install -r server/requirements.txt
+./server/run.sh
 ```
 
 
