@@ -15,13 +15,13 @@ export class ConnectionService {
   }
 
   getImage(query) {
-    this.http.get(`http://localhost:5000/get_image?query=${encodeURI(query)}`).subscribe(response => {
+    this.http.get(`https://emoji-fbhack.herokuapp.com/get_image?query=${encodeURI(query)}`).subscribe(response => {
       this.currentImages.next(response['images']);
     })
   }
 
   getEmoji(query) {
-    this.http.get(`http://localhost:5000/text_to_emoji?query=${encodeURI(query)}`).subscribe(response => {
+    this.http.get(`https://emoji-fbhack.herokuapp.com/text_to_emoji?query=${encodeURI(query)}`).subscribe(response => {
       this.currentEmoji.next(response['emojis']);
     })
   }
