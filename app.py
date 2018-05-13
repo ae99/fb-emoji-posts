@@ -58,11 +58,5 @@ def add_ua_compat(response):
 	response.headers['Access-Control-Allow-Headers'] = 'Authorization, Content-Type'
 	return response
 
-@app.errorhandler(404)
-@app.errorhandler(405)
-@app.errorhandler(500)
-def error(e):
-	return jsonify({'error': True, 'code': e.code, 'message': e.name.lower()}), e.code
-
 if __name__ == '__main__':
 	app.run(port=80)
