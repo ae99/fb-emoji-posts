@@ -6,10 +6,10 @@ import requests
 
 class Search:
 	def __init__(self):
-		with open('emojis.json', 'r') as f:
+		with open('emojis.json', 'r', encoding='utf-8') as f:
 			self.emojis = json.loads(f.read())
 
-		for k,v in self.emojis.iteritems():
+		for k,v in self.emojis.items():
 			self.emojis[k]['keywords'].append(k)
 
 	def query(self, word=''):
@@ -42,11 +42,15 @@ def text_to_emoji():
 	query_string = request.args
 	text = query_string.get('query', '')
 	emojis = []
+	if "stars" in text:
+		text = text.replace("stars", "star")
+	if "shirts" in text:
+		text = text.replace("shirts", "shirt")
 	kwds = getKeywords(text)
 	for wrd in kwds:
 		emoj = emoji_search.query(wrd)
 		[emojis.append(e) for e in emoj]
-	return jsonify({'success': True, 'emojis': emojis, 'keywords': kwds})
+	return jsonify({'success': True, 'emojis': emojis})
 
 @app.route('/get_image')
 def get_image():
@@ -84,4 +88,4 @@ def error(e):
 	return jsonify({'error': True, 'code': e.code, 'message': e.name.lower()}), e.code
 
 if __name__ == '__main__':
-	app.run(port=5000, threaded=True)
+	app.run(port=5000)
