@@ -2,7 +2,6 @@ from extractKeywords import getKeywords
 from flask import Flask, request, jsonify
 from random import randint
 import json
-import requests
 
 class Search:
 	def __init__(self):
@@ -51,28 +50,6 @@ def text_to_emoji():
 		emoj = emoji_search.query(wrd)
 		[emojis.append(e) for e in emoj]
 	return jsonify({'success': True, 'emojis': emojis})
-
-@app.route('/get_image')
-def get_image():
-	req = 'https://pixabay.com/api/?key=8972748-543159674e6cf6356e147ddcd&image_type=photo&pretty=true&q={}'
-	query_string = request.args
-	kwds = getKeywords(query_string.get('query', ''))
-	query_arg = '+'.join(kwds)
-	if query_arg[0] == '+':
-		query_arg = query_arg[1:]
-	if len(query_arg) > 2 and query_arg[-1] == '+':
-		query_arg = query_arg[0:len(query_arg)-1]
-
-	r = requests.get(req.format(query_arg))
-	j = r.json()
-
-	if r.status_code != 200:
-		print('{}{}'.format(r.status_code, 'error'))
-
-	ran = randint(0, 4)
-	images = [x['webformatURL'] for x in j['hits']]
-
-	return jsonify({'success': True, 'images': images})
 
 
 @app.after_request
