@@ -3,17 +3,23 @@ from flask import Flask, request, jsonify
 from random import randint
 import json
 
-import nltk
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
+try:
+	getKeywords("")
+except Exception as e:
+	import nltk
+	nltk.download('punkt')
+	nltk.download('averaged_perceptron_tagger')
 
 class Search:
 	def __init__(self):
 		with open('emojis.json', 'r') as f:
 			self.emojis = json.loads(f.read())
-
-		for k,v in self.emojis.items():
-			self.emojis[k]['keywords'].append(k)
+		try:
+			for k,v in self.emojis.iteritems():
+				self.emojis[k]['keywords'].append(k)
+		except:
+			for k,v in self.emojis.items():
+				self.emojis[k]['keywords'].append(k)
 
 	def query(self, word=''):
 		matches = []
@@ -63,4 +69,4 @@ def add_ua_compat(response):
 	return response
 
 if __name__ == '__main__':
-	app.run(port=80)
+	app.run(port=5000)
